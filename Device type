@@ -1,0 +1,8 @@
+CASE
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/83.0.4103.118 Safari/537.36") THEN "Desktop"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)") THEN "Desktop"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)") THEN "Desktop"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)") THEN "Mobile"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SeznamBot/3.2-test1; +http://napoveda.seznam.cz/en/seznambot-intro/)") THEN "Desktop"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SeznamBot/3.2-test1; +http://napoveda.seznam.cz/en/seznambot-intro/)") THEN "Desktop"
+END
