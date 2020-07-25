@@ -1,0 +1,30 @@
+CASE
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)") THEN "Bing"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SemrushBot-SA/0.97; +http://www.semrush.com/bot.html)") THEN "Semrush"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SemrushBot/6~bl; +http://www.semrush.com/bot.html)") THEN "Semrush"
+  WHEN (metadata.request.headers.user_agent = "Screaming Frog SEO Spider/13.0") THEN "Screaming frog spider"
+  WHEN (metadata.request.headers.user_agent = "https://commoncrawl.org/faq/)") THEN "Common Crawl bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)") THEN "Moz bot"
+  WHEN (metadata.request.headers.user_agent = "Twitterbot/1.0") THEN "Twitter Bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SeznamBot/3.2-test1; +http://napoveda.seznam.cz/en/seznambot-intro/)") THEN "Seznam bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36 (+https://whatis.contentkingapp.com)") THEN "ContentKingapp Bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)") THEN "Yandex bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/83.0.4103.118 Safari/537.36") THEN "Google Desktop bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)") THEN "Google Desktop bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.92 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)") THEN "Google Mobile bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)") THEN "Yandex Images bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; woorankreview/2.0; +https://www.woorank.com/)") THEN "Woorank bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; special_archiver/3.1.1 +http://www.archive.org/details/archive.org_bot)") THEN "Wayback machine bot"
+  WHEN (metadata.request.headers.user_agent = "woobot") THEN "Woobot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)") THEN "Uptimerobot"
+  WHEN (metadata.request.headers.user_agent = "Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)") THEN "Pingdom bot"
+  WHEN (metadata.request.headers.user_agent = "RyteBot/1.0.0 (+https://bot.ryte.com/)") THEN "Ryte bot"
+  WHEN (metadata.request.headers.user_agent = "Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)") THEN "Pingdom bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; HubSpot Crawler; web-crawlers@hubspot.com)") THEN "Hubspot bot"
+  WHEN (metadata.request.headers.user_agent = "Googlebot-Image/1.0") THEN "Google Image Bot"
+  WHEN (metadata.request.headers.user_agent = "Mozilla/5.0 (compatible; SemrushBot-BA; +http://www.semrush.com/bot.html)") THEN "Semrush"
+  
+  
+  
+  
+END
